@@ -93,6 +93,7 @@
     <Compile Include="System.ConsoleUtil\MessageType.cs" />
     <Compile Include="Tasks\NormalizePathOptions.cs" />
     <Compile Include="Tasks\NormalizePathTool.cs" />
+    <None Include="System.ConsoleUtil\cor3-sandbox.sln" />
     <None Include="System.ConsoleUtil\SkypeUtil.cs" />
     <Compile Include="System.Cor3.WinForms\ExceptionDialog.cs">
       <SubType>Form</SubType>

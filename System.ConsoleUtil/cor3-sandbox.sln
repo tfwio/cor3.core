@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+# SharpDevelop 5.0
+VisualStudioVersion = 12.0.20827.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NET40", "NET40", "{FA2E76ED-477D-4F45-A1AE-49FA9251AE7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Cor3.Data-Net40", "..\Source\Cor3.Data\System.Cor3.Data-Net40.csproj", "{BBAA461E-C30E-460B-BA30-0F6A8FDF7B78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Cor3.Forms-Net40", "..\Source\Cor3.Forms\System.Cor3.Forms-Net40.csproj", "{85AB9D2D-26E2-4536-B01C-8BA24E1F4615}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Cor3.Parsers-Net40", "..\Source\Cor3.Parsers\System.Cor3.Parsers-Net40.csproj", "{AAF48B33-3DF6-4D51-8366-0F768D67AE44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Cor3.Mvc3-Net40", "..\Source\Cor3.Extensions\System.Cor3.Mvc3-Net40.csproj", "{EAF5372F-5EC7-4C8C-940A-CC9B9E789C48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Cor3.Stock", "..\Source\Cor3.Stock\System.Cor3.Stock.csproj", "{11CCEC81-7B26-442D-A937-79B33DD89E8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Cor3-Net40", "..\Source\Cor3.Core\System.Cor3-Net40.csproj", "{36A13D56-FD3A-4AF3-B608-9C84FAACC41F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBAA461E-C30E-460B-BA30-0F6A8FDF7B78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBAA461E-C30E-460B-BA30-0F6A8FDF7B78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBAA461E-C30E-460B-BA30-0F6A8FDF7B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBAA461E-C30E-460B-BA30-0F6A8FDF7B78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85AB9D2D-26E2-4536-B01C-8BA24E1F4615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85AB9D2D-26E2-4536-B01C-8BA24E1F4615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85AB9D2D-26E2-4536-B01C-8BA24E1F4615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85AB9D2D-26E2-4536-B01C-8BA24E1F4615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAF48B33-3DF6-4D51-8366-0F768D67AE44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAF48B33-3DF6-4D51-8366-0F768D67AE44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAF48B33-3DF6-4D51-8366-0F768D67AE44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAF48B33-3DF6-4D51-8366-0F768D67AE44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAF5372F-5EC7-4C8C-940A-CC9B9E789C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAF5372F-5EC7-4C8C-940A-CC9B9E789C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAF5372F-5EC7-4C8C-940A-CC9B9E789C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAF5372F-5EC7-4C8C-940A-CC9B9E789C48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11CCEC81-7B26-442D-A937-79B33DD89E8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11CCEC81-7B26-442D-A937-79B33DD89E8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11CCEC81-7B26-442D-A937-79B33DD89E8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11CCEC81-7B26-442D-A937-79B33DD89E8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36A13D56-FD3A-4AF3-B608-9C84FAACC41F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36A13D56-FD3A-4AF3-B608-9C84FAACC41F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36A13D56-FD3A-4AF3-B608-9C84FAACC41F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36A13D56-FD3A-4AF3-B608-9C84FAACC41F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BBAA461E-C30E-460B-BA30-0F6A8FDF7B78} = {FA2E76ED-477D-4F45-A1AE-49FA9251AE7F}
+		{85AB9D2D-26E2-4536-B01C-8BA24E1F4615} = {FA2E76ED-477D-4F45-A1AE-49FA9251AE7F}
+		{AAF48B33-3DF6-4D51-8366-0F768D67AE44} = {FA2E76ED-477D-4F45-A1AE-49FA9251AE7F}
+		{EAF5372F-5EC7-4C8C-940A-CC9B9E789C48} = {FA2E76ED-477D-4F45-A1AE-49FA9251AE7F}
+		{11CCEC81-7B26-442D-A937-79B33DD89E8B} = {FA2E76ED-477D-4F45-A1AE-49FA9251AE7F}
+		{36A13D56-FD3A-4AF3-B608-9C84FAACC41F} = {FA2E76ED-477D-4F45-A1AE-49FA9251AE7F}
+	EndGlobalSection
+EndGlobal
