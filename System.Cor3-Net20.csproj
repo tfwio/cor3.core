@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{CAFD2E08-18A8-474D-AA83-6ADFAFD9C198}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SourceAnalysisOverrideSettingsFile>C:\Documents and Settings\oIo\Application Data\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>cor3.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>False</DelaySign>
+    <AssemblyOriginatorKeyMode>File</AssemblyOriginatorKeyMode>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <RootNamespace>System.Cor3</RootNamespace>
+    <AssemblyName>System.Cor3</AssemblyName>
+    <OutputType>Library</OutputType>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <IntermediateOutputPath>obj\\Net40Net40\$(Configuration)\</IntermediateOutputPath>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE;CONSOLE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\Net40\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\Net40\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>Full</DebugType>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591,1587,1570,1572,1573</NoWarn>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1591,1587,1570,1572,1573</NoWarn>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>x86</PlatformTarget>
+    <FileAlignment>4096</FileAlignment>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data.Filter\query_field.cs" />
+    <Compile Include="Data.Filter\SqlFieldString.cs" />
+    <Compile Include="Data.Filter\SqlServerFieldString.cs" />
+    <Compile Include="Data.Filter\SqlStringVar.cs" />
+    <Compile Include="Data.Filter\VarAmpersand.cs" />
+    <Compile Include="Drawing\LangSimplify.cs" />
+    <Compile Include="Drawing\McMaster.cs" />
+    <Compile Include="Drawing\Metrics.cs" />
+    <Compile Include="Drawing\ScaffoldCalculator.cs" />
+    <Compile Include="Internals\UndoRedoCommandManager.cs" />
+    <Compile Include="Internals\ViewPoint.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\GAsm.cs" />
+    <Compile Include="Strings.Designer.cs">
+      <DependentUpon>Strings.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="System.ConsoleUtil\ArgumentType.cs" />
+    <Compile Include="System.ConsoleUtil\MessageType.cs" />
+    <Compile Include="Tasks\NormalizePathTool.cs" />
+    <None Include="System.ConsoleUtil\SkypeUtil.cs" />
+    <Compile Include="System.Cor3.WinForms\ExceptionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System.Cor3.WinForms\ExceptionDialog.Designer.cs">
+      <DependentUpon>ExceptionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System.DaielGrunwald\FastSmartWeakEvent.cs" />
+    <Compile Include="System.DaielGrunwald\SmartWeakEvent.cs" />
+    <Compile Include="System.Drawing\AutoIncr.cs" />
+    <Compile Include="System.Drawing\CORNERS.cs" />
+    <Compile Include="System.Drawing\FRectCorners.cs" />
+    <Compile Include="System.Drawing\GraphicsExtension.cs" />
+    <Compile Include="System.Drawing\RoundRectRenderer.cs" />
+    <Compile Include="System.Drawing\RoundURectRenderer.cs" />
+    <Compile Include="System.Drawing\UnitD.cs" />
+    <Compile Include="System.Drawing\DPoint.cs" />
+    <Compile Include="System.Drawing\DRect.cs" />
+    <Compile Include="System.Drawing\FloatPoint.cs" />
+    <Compile Include="System.Drawing\FloatRect.cs" />
+    <Compile Include="System.Drawing\Gradients.cs" />
+    <Compile Include="System.Drawing\HGradient.cs" />
+    <Compile Include="System.Drawing\HPoint.cs" />
+    <Compile Include="System.Drawing\HRect.cs" />
+    <Compile Include="System.Drawing\SplinePointD.cs" />
+    <Compile Include="System.Drawing\DblUnit.cs" />
+    <Compile Include="System.Drawing\UDPoint.cs" />
+    <Compile Include="System.Drawing\UnitType.cs" />
+    <Compile Include="System.Drawing\UPointD.cs" />
+    <Compile Include="System.Drawing\RectangleDoubleUnit.cs" />
+    <Compile Include="System.Drawing\Utilities\ColourUtil.cs" />
+    <Compile Include="System.Drawing\Utilities\ConvertUnits.cs" />
+    <Compile Include="System.Drawing\Utilities\LineUtil.cs" />
+    <Compile Include="System.Drawing\Utilities\SuperOld.cs" />
+    <Compile Include="System.Drawing\Utilities\Utilities.DictionaryHelpers.cs" />
+    <Compile Include="System.Drawing\VPointD.cs" />
+    <Compile Include="System.Drawing\XPoint.cs" />
+    <Compile Include="System.IO\CheckSum.cs" />
+    <Compile Include="System.IO\Converter.cs" />
+    <Compile Include="System\AppInfo.cs" />
+    <Compile Include="System\ArgumentClass.cs" />
+    <Compile Include="System\AssemblyDescription.cs" />
+    <Compile Include="System\BrowserHelper.cs" />
+    <Compile Include="System\Commander.cs" />
+    <Compile Include="System\CommandingClass\CommandingClass.cs" />
+    <Compile Include="System\CommandingClass\CommandingClassWithTimer.cs" />
+    <Compile Include="System\CommandingClass\EventHatch.cs" />
+    <Compile Include="System\CommandingClass\HatchCollection.cs" />
+    <Compile Include="System\CommandingClass\ICommandingClass.cs" />
+    <Compile Include="System\CommandingClass\ICommandingClassWithTimer.cs" />
+    <Compile Include="System\ControlUtil.cs" />
+    <Compile Include="System\ControlUtil.TreeUtil.cs">
+      <DependentUpon>ControlUtil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ControlUtil.ListUtil.cs">
+      <DependentUpon>ControlUtil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ControlUtil.ToolStrip.cs">
+      <DependentUpon>ControlUtil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\DateHelper.cs" />
+    <Compile Include="System\DICT.cs" />
+    <Compile Include="System\DICTableBase.cs" />
+    <None Include="System\Divisor.cs" />
+    <None Include="System\DoubleMathExtension.cs" />
+    <None Include="System\EnumExtension.cs" />
+    <Compile Include="System\EventStringArgs.cs" />
+    <Compile Include="System\ExecutionSettings.cs" />
+    <Compile Include="System\FileLoadedEventArgs.cs" />
+    <Compile Include="System\InputParameterType.cs" />
+    <Compile Include="System\IO.EndianUtility.cs" />
+    <Compile Include="System\Item.cs">
+      <DependentUpon>ArgumentClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\last_addon.cs" />
+    <Compile Include="System\Logger.cs" />
+    <Compile Include="System\LoggerAttribute.cs" />
+    <Compile Include="System\Mart.cs" />
+    <Compile Include="System\MirrorMirror.cs" />
+    <Compile Include="System\ParamaterlessAction.cs" />
+    <Compile Include="System\Paths.cs" />
+    <Compile Include="System\Reshelp.cs" />
+    <Compile Include="System\SerializableClass.cs" />
+    <Compile Include="System\Status.cs" />
+    <Compile Include="System\StringByteExtension.cs" />
+    <Compile Include="System\StringHelper.cs" />
+    <Compile Include="System\Stump.cs">
+      <DependentUpon>ArgumentClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\SVar.cs" />
+    <Compile Include="System\Global.cs" />
+    <Compile Include="System\InputFile.cs" />
+    <Compile Include="System\InputFileManager.cs" />
+    <Compile Include="System\introvert.cs" />
+    <Compile Include="System\ITableChecksum.cs" />
+    <Compile Include="System\LoadSaveFlags.cs" />
+    <Compile Include="System\MRU.cs" />
+    <Compile Include="System\MRUClass.cs">
+      <DependentUpon>MRU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\MRUItem.cs">
+      <DependentUpon>MRU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\object_manager.cs" />
+    <Compile Include="System\Serial.cs" />
+    <Compile Include="System\SerializableList.cs" />
+    <Compile Include="System\SimpleCollection.cs" />
+    <Compile Include="System\SimpleType.cs" />
+    <Compile Include="System\SVarFormat.cs" />
+    <Compile Include="System.Cor3.WinForms\TimedEntryUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="System.Cor3.WinForms\TimedTextComponent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <None Include="System\System.DialogUtil.cs" />
+    <Compile Include="System\WTF.cs" />
+    <Compile Include="System\XLog.cs" />
+    <Compile Include="System\XLogEventArgs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="System\CommandingClass" />
+    <Folder Include="Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Strings.resx">
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System.Cor3.WinForms\ExceptionDialog.resx">
+      <DependentUpon>ExceptionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
