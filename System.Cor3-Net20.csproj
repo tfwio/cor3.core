@@ -91,7 +91,9 @@
     </Compile>
     <Compile Include="System.ConsoleUtil\ArgumentType.cs" />
     <Compile Include="System.ConsoleUtil\MessageType.cs" />
+    <Compile Include="Tasks\NormalizePathOptions.cs" />
     <Compile Include="Tasks\NormalizePathTool.cs" />
+    <Compile Include="Tasks\PathNotRootedException.cs" />
     <None Include="System.ConsoleUtil\SkypeUtil.cs" />
     <Compile Include="System.Cor3.WinForms\ExceptionDialog.cs">
       <SubType>Form</SubType>
@@ -174,7 +176,6 @@
     <Compile Include="System\ParamaterlessAction.cs" />
     <Compile Include="System\Paths.cs" />
     <Compile Include="System\Reshelp.cs" />
-    <Compile Include="System\SerializableClass.cs" />
     <Compile Include="System\Status.cs" />
     <Compile Include="System\StringByteExtension.cs" />
     <Compile Include="System\StringHelper.cs" />

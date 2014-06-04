@@ -8,9 +8,7 @@
  */
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.Threading.Tasks;
 
 // http://stackoverflow.com/questions/1395205/better-way-to-check-if-path-is-a-file-or-a-directory-c-net
 
