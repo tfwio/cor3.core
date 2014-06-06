@@ -23,9 +23,8 @@
 using System;
 using System.ComponentModel;
 using System.Drawing;
-using System.Windows.Forms;
 
-namespace GenericWAV.Views
+namespace System.Windows.Forms
 {
 	/// <summary>
 	/// Description of spl.
