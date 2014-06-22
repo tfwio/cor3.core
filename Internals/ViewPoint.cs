@@ -574,24 +574,26 @@ namespace System.Internals
 		}
 	}
 	
-	public class ViewMaster<TView> where TView:UserView
+	public class ViewMaster<TViewPoint,TUserView>
+		where TViewPoint:ViewPoint<TUserView>
+		where TUserView:UserView
 	{
 		Assembly ExecutingAssembly { get { return Assembly.GetExecutingAssembly(); } }
 		protected IList<Assembly> AssemblyCollection { get;set; }
 		
 		public IList<string> Keys { get;set; }
 		
-		public IList<TView> ViewCollection { get; set; }
+		public IList<TViewPoint> ViewCollection { get; set; }
 		
-		public ViewMaster(Assembly asm=ExecutingAssembly)
+		public ViewMaster(Assembly asm)
 		{
 			AssemblyCollection = new List<Assembly>(){ asm };
-			ViewCollection = new List<TView>();
+			ViewCollection = new List<TViewPoint>();
 			Keys = new List<string>();
 			
 			foreach (var a in AssemblyCollection)
 			{
-				var x = ViewPoint.EnumerateViewTypes<TView>(a);
+				var x = ViewPoint.EnumerateViewTypes<TViewPoint>(a);
 				foreach (var v in x) ViewCollection.Add(v);
 			}
 			foreach (IViewPoint view in ViewCollection)
