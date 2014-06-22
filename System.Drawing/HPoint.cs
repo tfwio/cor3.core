@@ -37,8 +37,7 @@ namespace System.Drawing
 	/// </remarks>
 	public class HPoint
 	{
-		static readonly HPoint emptyPoint = new HPoint(0f);
-		static public HPoint Empty { get { return emptyPoint; } }
+		static public HPoint Empty { get { return new HPoint(0f); } }
 		static public HPoint One { get { return new HPoint(1f); } }
 
 		float _X=0f, _Y=0f;

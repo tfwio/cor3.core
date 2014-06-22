@@ -55,9 +55,10 @@ namespace System.Drawing
 		public FloatPoint Floored { get { return Floor(this); } }
 		public FloatPoint Rounded { get { return Round(this,0); } }
 		
-		static readonly FloatPoint emptyPoint = new FloatPoint(0f);
-		static public FloatPoint Empty { get { return emptyPoint; } }
+		static public FloatPoint Empty { get { return new FloatPoint(0f); } }
 		static public FloatPoint One { get { return new FloatPoint(1f); } }
+		static public FloatPoint RootComplex { get { return new FloatPoint(1.0f, 0.0f); } }
+		
 		
 		float _X, _Y;
 		[XmlAttribute] public float X { get { return _X; } set { _X = value; } }
@@ -110,7 +111,7 @@ namespace System.Drawing
 		/// <returns></returns>
 		static public FloatPoint Fit(FloatPoint dest, FloatPoint source, int ScaleFlagBit)
 		{
-			FloatPoint HX = dest/source;
+			FloatPoint HX = dest / source;
 			if (ScaleFlagBit == 0) return Fit( dest , source , 1 );
 			else return (ScaleFlagBit == 1) ? source * HX.X : source * HX.Y;
 		}
@@ -156,12 +157,17 @@ namespace System.Drawing
 		//		{
 		//			return (ZoomAfterOffset) ? (this+((MultiplyOffset) ? offset*zoom : offset ))*zoom : (this*zoom)+((MultiplyOffset) ? offset*zoom : offset );
 		//		}
-		/// In most scenarios (reminding my self of my application...)
-		/// zoom is applied by the renderer, so we shouldn't need it?
-		/// I could be wrong.  We could be zoomed in to draw.
-		public FloatPoint Translate(FloatPoint offset, FloatPoint zoom)
+		/// <summary>
+		/// Note that this is not a suggested optimal translation.
+		/// The relation of most transforms should be provided via
+		/// the context of the window or container.
+		/// </summary>
+		/// <param name="offset"></param>
+		/// <param name="zoom"></param>
+		/// <returns></returns>
+		public FloatPoint Translate(FloatPoint translateOffset, FloatPoint translateZoom)
 		{
-			return (this+offset)*zoom;
+			return (this+translateOffset)*translateZoom;
 		}
 		public FloatPoint Translate(double offset, double zoom)
 		{
@@ -248,6 +254,9 @@ namespace System.Drawing
 		static public implicit operator FloatPoint(Point s){ return new FloatPoint(s); }
 		static public implicit operator FloatPoint(PointF s){ return new FloatPoint(s); }
 		static public implicit operator FloatPoint(DPoint s){ return new FloatPoint(s); }
+
+		//static public implicit operator FloatPoint(float s) { return new FloatPoint(s,s); }
+
 		#endregion
 		#region Maths
 		public bool IsXG(FloatPoint P) { return X>P.X; }
