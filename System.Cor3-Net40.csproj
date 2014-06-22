@@ -69,6 +69,8 @@
     <Compile Include="Drawing\McMaster.cs" />
     <Compile Include="Drawing\Metrics.cs" />
     <Compile Include="Drawing\ScaffoldCalculator.cs" />
+    <Compile Include="System.Drawing\DoubleVector.cs" />
+    <Compile Include="System.Drawing\FloatVector.cs" />
     <Compile Include="Tasks\PathNotRootedException.cs" />
     <None Include="Include\ClipboardMonitorService.cs">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
